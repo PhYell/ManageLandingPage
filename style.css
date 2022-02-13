@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@100;400;700&family=Bellefair&display=swap');
+:root{
+    --main-orange: #f8643c;
+    --main-blue: #282c54;
+    --main-width: 80%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg-simplify-section-desktop.svg);
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+}
+h1{
+    color: rgb(10, 10, 73);
+    font-size: 2.5rem;
+}
+p,
+q{
+    color: rgb(189, 189, 189);
+    font-size: 1rem;
+}
+header{
+    width: var(--main-width);
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+header img{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+nav{
+    margin: auto;
+}
+nav ul{
+    display: flex;
+    gap: 3%;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li .navLink{
+    font-family: 'Barlow', sans-serif;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+    padding: 0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(56, 56, 56, 0.1);
+}
+nav ul li .navLink:hover,nav ul li .navLink:active {
+    color: rgb(68, 68, 68);
+    text-shadow: 1px 1px 4px rgba(73, 73, 73, 0.055);
+}
+.hamburgerMenu{
+    display: none;
+}
+.hamburgerMenu:hover, .hamburgerMenu:active{
+    transform: scale(1.1);
+}
+button{
+    background-color: var(--main-orange);
+    box-shadow: 5px 10px 10px rgba(255, 121, 72, 0.219);
+    border-radius: 25px;
+    padding: 1rem 3rem;
+    white-space: nowrap;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+button:hover, button:active{
+    cursor: pointer;
+    background-color: #fd7853;
+    box-shadow: 5px 10px 10px rgba(255, 134, 90, 0.219);
+}
+
+main{
+    width: var(--main-width);
+    margin: 90px auto; 
+}
+.quickInfo{
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+.quickInfo h1{
+    padding-bottom: 30px;
+}
+.quickInfo p{
+    padding-bottom: 30px;
+}
+.quickInfoText{
+    padding-top: 50px;
+}
+.quickInfoText{
+    max-width: 30rem;
+}
+/* .quickInfoText h1{
+    max-width: 30rem;
+} */
+.productInfo{
+    max-width: 500px;
+}
+.productInfoUnit h3{
+    padding-bottom: 20px;
+}
+.productInfoUnit{
+    display: flex;
+    gap: 1.5rem;
+}
+.num{
+    display: inline-block;
+    background-color: var(--main-orange);
+    color: white;
+    padding: 0 25px;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 15px;
+}
+
+article{
+    margin-top: 150px;
+    text-align: center;
+}
+article h1{
+    margin-bottom: 100px;
+}
+.reviews{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 4%;
+    margin-bottom: 4rem;
+}
+.review{
+    background-color: #f8f8f8;
+}
+.review{
+    padding: 0 1.2rem 1.2rem 1.2rem;
+}
+.review p:first-of-type{
+    color: var(--main-blue);
+    font-weight: bold;
+    margin-top: -2rem;
+    padding: 0.5rem;
+}
+.review img{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    bottom: 2.5rem;
+}
+
+
+footer{
+    margin-top: 150px;
+}
+.footerTopPart{
+    background-image: url(images/bg-simplify-section-desktop.svg);
+    background-color: var(--main-orange);
+    padding: 50px 0; 
+}
+.footerTopPartContent{
+    width: var(--main-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footerTopPartContent h1{
+    color: white;
+    max-width: 25rem;
+}
+.footerTopPartContent button{
+    background-color: white;
+    color: var(--main-orange);
+    box-shadow: 5px 10px 10px rgba(241, 241, 241, 0.11);
+    margin: auto 0;
+}
+.footerTopPartContent button:hover{
+    background-color: rgb(250, 250, 250);
+}
+
+.footerBottomPart{
+    background-color: #201c24;
+}
+.footerBottomPartContent{
+    padding: 50px 0;
+    width: var(--main-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footerLogo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footerLinksHolder{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.footerLinks li{
+    list-style: none;
+    padding-bottom: 15px;
+}
+.footerLinks li a{
+    color: white;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+.footerLinks li a:hover{
+    color: rgb(68, 68, 68);
+}
+
+.userInbox input{
+    border-radius: 20px;
+    border: none;
+    height: 2.5rem;
+    padding: 0 20px;
+    margin-right: 10px;
+}
+.userInbox button{
+    box-shadow: none;
+    padding: 1rem 2rem;
+}
+
+
+@media screen and (max-width: 1000px){
+    header button{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: block;
+    }
+    header{
+        justify-content: space-between;
+        margin: 20px auto;
+    }
+    nav{
+        display: none;
+    }
+    .quickInfo{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .quickInfo button{
+        margin-bottom: 50px;
+    }
+    .productInfo{
+        margin: auto;
+    }
+    .quickInfoText{
+        margin: auto;
+    }
+
+    .reviews{
+        flex-direction: column;
+    }
+    .review{
+        margin-top: 3.5rem;
+    }
+
+    .footerTopPartContent{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footerTopPartContent h1{
+        margin: auto;
+    }
+    .footerTopPartContent button{
+        margin: 2rem auto;
+    }
+
+    .footerBottomPartContent{
+        flex-direction: column-reverse;
+    }
+    .footerBottomPartContent{
+        margin: auto;
+    }
+    .footerLogo{
+        width: 50%;
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+    .outerLinks{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        margin-top: 2rem
+    }
+    .footerLinksHolder{
+        margin-top: 2rem;
+        justify-content: space-around;
+    }
+    .userInbox{
+        margin: auto;
+        white-space: nowrap;
+    }
+
+
+    nav{
+        background-color: white;
+        position: absolute;
+        margin: auto;
+        border-radius: 0.25rem;
+        top: 7rem;
+        left: 1rem;
+        right: 1rem;
+        box-shadow: 0 0 100px rgb(56, 56, 56);
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    nav ul li{
+        padding: 1.5rem;
+    }
+}
+@media screen and (max-width: 600px){
+    :root{
+        --main-width: 95%;
+    }
+}
