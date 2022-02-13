@@ -85,8 +85,9 @@ main{
 }
 .quickInfo{
     display: flex;
-    justify-content: space-between;
-    gap: 10%;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    gap: 5%;
 }
 .quickInfo h1{
     padding-bottom: 30px;
